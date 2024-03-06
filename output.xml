@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.8.10 on linux)" generated="2024-02-06T11:20:31.773212" rpa="false" schemaversion="5">
+<suite id="s1" name="Open website" source="/home/drashti/Documents/Android_Automation/robot-files/ROBOT_Framework/Test_Cases/Web/Open_website.robot">
+<test id="s1-t1" name="Open Flipkart Website Test Case" line="8">
+<kw name="Open Flipkart Website" owner="Helper_Functions">
+<msg time="2024-02-06T11:20:32.010411" level="INFO">Opening browser 'chrome' to base url 'https://www.flipkart.com'.</msg>
+<arg>${url}</arg>
+<doc>Open the Flipkart website in a web browser.</doc>
+<status status="PASS" start="2024-02-06T11:20:32.009582" elapsed="1.508291"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-06T11:20:33.519816" elapsed="0.133045"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-02-06T11:20:33.842047" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-02-06T11:20:33.655439" elapsed="0.188600"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-06T11:20:33.854356" level="INFO">${screenshot_path} = /home/drashti/Documents/Android_Automation/robot-files/ROBOT_Framework/Results/Web/Open.png</msg>
+<var>${screenshot_path}</var>
+<arg>/home/drashti/Documents/Android_Automation/robot-files/ROBOT_Framework/Results/Web/Open.png</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-06T11:20:33.851230" elapsed="0.004599"/>
+</kw>
+<kw name="Save Screenshot" owner="Save_ss">
+<msg time="2024-02-06T11:20:33.988231" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Results/Web/Open.png"&gt;&lt;img src="Results/Web/Open.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-02-06T11:20:33.988619" level="INFO">Screenshot saved at: /home/drashti/Documents/Android_Automation/robot-files/ROBOT_Framework/Results/Web/Open.png</msg>
+<arg>${screenshot_path}</arg>
+<status status="PASS" start="2024-02-06T11:20:33.861290" elapsed="0.127620"/>
+</kw>
+<doc>Open the Flipkart website in a web browser</doc>
+<status status="PASS" start="2024-02-06T11:20:32.006608" elapsed="1.983451"/>
+</test>
+<status status="PASS" start="2024-02-06T11:20:31.778634" elapsed="2.213791"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Open website">Open website</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
